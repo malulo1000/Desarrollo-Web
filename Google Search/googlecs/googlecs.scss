@@ -1,0 +1,71 @@
+%botones {
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 38px;
+    text-decoration:none;
+    text-align: center;
+    border-radius: 4px;
+    padding: 0 16px;
+    margin: 11px 4px;
+}
+
+%azules {
+    float: right;
+    color:#FFFFFF;
+    font-weight:600;
+}
+
+#todo{
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    @extend %botones;
+    @extend %azules;
+    height: 36px;
+    background-color: #0077FF;
+    min-width: 54px;
+}
+
+.text:hover { 
+    @extend %botones;
+    @extend %azules;
+    height: 37px;
+    background-color: #1974BF;
+}
+
+#logogoogle {
+    margin-top: 40px;
+    width: 45%;
+}
+
+#barra {
+    margin: 10px auto;
+    width: 65%;
+    height: 3vw;
+    border-radius: 50px;
+    border-width: 1px;
+    border-color: #B3B7BC;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 5px 20px;
+    outline:none;
+}
+
+.gris{
+    @extend %botones;
+    margin-top: 30px;
+    background-color: #F8F9FA;
+    color: #202124;
+    border-color: #F8F9FA;
+    height: 37px ;
+}
+
+.gris:hover { 
+    @extend %botones;
+    background-color: #F8F9FA;
+    color: #202124;
+    border-color: #A5A5A6;
+    height: 38px;
+}
